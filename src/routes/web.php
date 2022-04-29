@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('top', function () {
-    return  view('toppage');
+    return  view('articles.toppage');
 });
