@@ -11,7 +11,8 @@ class ArticleController extends Controller
         $articles = [
             (object)[
                 'id' => 1,
-                'title' => 'タイトル',
+                'radio_title' => '番組名1',
+                'radio_date' => "放送日時1",
                 'body' => '本文1',
                 'created_at' => now(),
                 'user' => (object)[
@@ -21,7 +22,8 @@ class ArticleController extends Controller
             ],
             (object)[
                 'id' => 1,
-                'title' => 'タイトル',
+                'radio_title' => '番組名2',
+                'radio_date' => "放送日時2",
                 'body' => '本文1',
                 'created_at' => now(),
                 'user' => (object)[
@@ -31,7 +33,8 @@ class ArticleController extends Controller
             ],
             (object)[
                 'id' => 1,
-                'title' => 'タイトル',
+                'radio_title' => '番組名3',
+                'radio_date' => '放送日時3',
                 'body' => '本文1',
                 'created_at' => now(),
                 'user' => (object)[
