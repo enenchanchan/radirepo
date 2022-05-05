@@ -1,7 +1,11 @@
 @csrf
 <div class="md-form">
-    <label for="">タイトル</label>
-    <input type="text" name="title" class="form-contorl" required value="{{old('title')}}">
+    <label for="">番組タイトル</label>
+    <input name="radio_title" class="form-control" required value="{{old('title')}}">
+</div>
+<div class="form-group mt-3">
+    <label for="">放送日</label>
+    <input type="date" name="radio_date" required class="form-control" placeholder="放送日">
 </div>
 <div class="form-group">
     <label for=""></label>
