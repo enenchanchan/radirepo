@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkorange;">
     <div class="container">
-        <a href="" class="navbar-brand">radirepo <i class="fa-solid fa-pen"></i></a>
+        <a href="/" class="navbar-brand">radirepo <i class="fa-solid fa-pen"></i></a>
         <ul class="navbar-nav">
             @guest
             <li class="nav-item"> <a href="{{route('register')}}" class="nav-link"> ユーザー登録</a></li>
