@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +20,6 @@ Route::get('top', function () {
     return  view('articles.toppage');
 });
 
+
+Auth::routes();
 Route::get('/', [ArticleController::class, 'index']);
