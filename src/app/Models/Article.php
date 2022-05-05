@@ -10,7 +10,6 @@ class Article extends Model
 {
     public function user(): BelongsTo
     {
-        return $this->belongsTo('Models\User');
+        return $this->belongsTo('app\Models\User');
     }
-    use HasFactory;
 }
