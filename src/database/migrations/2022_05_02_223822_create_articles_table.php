@@ -14,7 +14,7 @@ class CreateArticlesTable extends Migration
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
-            $table->unsignedBigInteger('id');
+            $table->bigIncrements('id');
             $table->string('radio_title');
             $table->date('radio_date');
             $table->text('body');
