@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
 use App\Http\Requests\ArticleRequest;
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class ArticleController extends Controller
 {
@@ -26,6 +26,23 @@ class ArticleController extends Controller
         $article->body = $request->body;
         $article->user_id = $request->user()->id;
         $article->save();
+        return redirect()->route('articles.index');
+    }
+
+    public function edit(Article $article)
+    {
+        return view('articles.edit', ['article' => $article]);
+    }
+
+    public function update(ArticleRequest $request, Article $article)
+    {
+        $article->fill($request->all())->save();
+        return redirect()->route('articles.index');
+    }
+
+    public function destroy(Article $article)
+    {
+        $article->delete();
         return redirect()->route('articles.index');
     }
 }
